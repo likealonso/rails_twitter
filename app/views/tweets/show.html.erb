@@ -1,0 +1,7 @@
+<h1> <%= @tweet.handle %> </h1>
+
+<p> <%= @tweet.handle %> tweets: <%= @tweet.content %> </p>
+
+<%= link_to "Go back to all tweets", tweets_path %>
+<br>
+<%= link_to "Delete this tweet!", tweet_path(@tweet), method: :delete, data: { confirm: "Are you sure you want to delete this tweet?"} %>
